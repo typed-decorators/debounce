@@ -9,13 +9,13 @@ class C {
   }
 }
 
-test('debounce a prodedure; skipped the initial call', () => {
+test("debounce a prodedure; skipped the initial call", () => {
   const c = new C(0);
   c.f();
   expect(c.count).toBe(0);
 });
 
-test('debounce a prodedure; sometimes called', async () => {
+test("debounce a prodedure; sometimes called", async () => {
   const c = new C(0);
   c.f();
   c.f();
@@ -27,4 +27,3 @@ test('debounce a prodedure; sometimes called', async () => {
 
   expect(c.count).toBe(1);
 });
-

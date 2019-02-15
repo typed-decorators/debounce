@@ -8,7 +8,7 @@
     "build": "tsc",
     "prepublishOnly": "npm run build",
     "test": "jest",
-    "format": "npx prettier --write example/*.ts src/*.ts test/*.ts",
+    "format": "npx prettier --write src/*.ts test/*.ts",
     "lint": "npx tslint --project tsconfig.json"
   },
   "keywords": [
